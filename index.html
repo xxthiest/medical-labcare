@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Labcare - Mysore & Harihara</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; color: #1f2937; }
+        
+        nav { background: #1e3a5f; color: #fff; padding: 20px; text-align: center; position: fixed; width: 100%; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .logo { font-size: 28px; font-weight: bold; }
+        
+        .hero { background: linear-gradient(135deg, #1e3a5f, #2563eb); color: #fff; padding: 150px 20px 80px; text-align: center; margin-top: 60px; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 15px; }
+        .hero .subtitle { font-size: 1.5rem; letter-spacing: 3px; color: #f4c430; margin-bottom: 15px; font-weight: bold; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; }
+        .btn { background: #2563eb; color: #fff; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; border: 2px solid #2563eb; display: inline-block; margin-top: 20px; transition: all 0.3s; }
+        .btn:hover { background: transparent; border-color: #fff; }
+        
+        section { padding: 80px 20px; text-align: center; }
+        h2 { color: #1e3a5f; font-size: 2.8rem; margin-bottom: 50px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
+        .card { background: #f9fafb; padding: 40px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .card:hover { transform: translateY(-10px); }
+        .card i { font-size: 3.5rem; color: #2563eb; margin-bottom: 20px; }
+        .card h3 { font-size: 1.6rem; color: #1e3a5f; margin-bottom: 15px; }
+        .card p { color: #6b7280; line-height: 1.6; }
+        .role { color: #2563eb; font-weight: bold; margin: 10px 0; }
+        
+        .services { background: #f9fafb; }
+        .team { background: #fff; }
+        .locations { background: #f9fafb; }
+        .contact { background: #fff; }
+        
+        form { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+        input, select, textarea { width: 100%; padding: 15px; border: 2px solid #e5e7eb; border-radius: 10px; font-size: 1rem; }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: #2563eb; }
+        button { cursor: pointer; }
+        
+        footer { background: #1e3a5f; color: #fff; padding: 40px 20px; text-align: center; }
+        footer p { color: rgba(255,255,255,0.8); }
+        
+        @media(max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .hero .subtitle { font-size: 1.2rem; }
+            .grid { grid-template-columns: 1fr; }
+            h2 { font-size: 2rem; }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">🔬 Medical Labcare</div>
+    </nav>
+
+    <section class="hero">
+        <h1>Medical Labcare</h1>
+        <p class="subtitle">MEDICAL LABORATORY SERVICE</p>
+        <p>Trusted diagnostic services with accurate results and professional care</p>
+        <p style="font-size: 1.1rem; opacity: 0.9;">📍 Serving Mysore & Harihara</p>
+        <a href="#contact" class="btn">Book Home Collection</a>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-vial"></i>
+                <h3>Blood Tests</h3>
+                <p>Complete blood count, lipid profile, blood sugar, and comprehensive blood analysis</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Health Checkups</h3>
+                <p>Full body checkup packages designed for preventive healthcare</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-microscope"></i>
+                <h3>Pathology</h3>
+                <p>Advanced pathology services with state-of-the-art equipment</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-dna"></i>
+                <h3>Biochemistry</h3>
+                <p>Liver function, kidney function, thyroid profile, and hormone testing</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-bacteria"></i>
+                <h3>Microbiology</h3>
+                <p>Culture tests, sensitivity tests, and infection diagnosis</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-home"></i>
+                <h3>Home Collection</h3>
+                <p>Convenient sample collection from your home with trained professionals</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <h2>Our Expert Team</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-user-md"></i>
+                <h3>Tejas Anner</h3>
+                <p class="role">Scientific Technician</p>
+                <p>📞 7760749144</p>
+                <p>✉️ tejasanner4@gmail.com</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-user-md"></i>
+                <h3>Prem Kumar V</h3>
+                <p class="role">Scientific Technician</p>
+                <p>📞 9902811332</p>
+                <p>✉️ kp246248@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="locations">
+        <h2>Our Locations</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Mysore Branch</h3>
+                <p style="font-size: 1.1rem; margin: 15px 0;">Mysore, Karnataka</p>
+                <p>📞 7760749144</p>
+                <p>✉️ tejasanner4@gmail.com</p>
+                <p>🕐 Mon - Sat: 8:00 AM - 8:00 PM</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Harihara Branch</h3>
+                <p style="font-size: 1.1rem; margin: 15px 0;">Harihara, Karnataka</p>
+                <p>📞 9902811332</p>
+                <p>✉️ kp246248@gmail.com</p>
+                <p>🕐 Mon - Sat: 8:00 AM - 8:00 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Book Your Test</h2>
+        <form onsubmit="alert('Thank you! We will contact you shortly.'); this.reset(); return false;">
+            <input type="text" placeholder="Your Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="email" placeholder="Email Address" required>
+            <select required>
+                <option value="">Select Location</option>
+                <option value="mysore">Mysore</option>
+                <option value="harihara">Harihara</option>
+            </select>
+            <select required>
+                <option value="">Service Type</option>
+                <option value="home">Home Collection</option>
+                <option value="lab">Lab Visit</option>
+            </select>
+            <textarea placeholder="Test Requirements / Message" rows="4"></textarea>
+            <button type="submit" class="btn">Book Appointment</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Medical Labcare. All rights reserved.</p>
+        <p style="margin-top: 10px;">Mysore: 7760749144 | Harihara: 9902811332</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
